@@ -5,13 +5,10 @@ Pipeline for the validation of incomplete nucleotide sequences
 
 ## Requirements
 
-* Software:
-
-`$ apt-get install ncbi-blast+`
-
-`$ apt-get install samtools`
-
-`$ apt-get install bowtie2`
+* Software:<br>
+`$ apt-get install ncbi-blast+`<br>
+`$ apt-get install samtools`<br>
+`$ apt-get install bowtie2`<br>
 
 * Efetch:
 `$ cd ~/bin/bash
