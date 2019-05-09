@@ -1,7 +1,7 @@
 <img src="DSG_doodle.png" width="400">
 
 # ValidGene
-Pipeline for the validation of incomplete nucleotide sequences
+Pipeline for the validation of incomplete nucleotide sequences.
 
 ## Requirements
 
