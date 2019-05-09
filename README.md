@@ -5,7 +5,7 @@ Pipeline for the validation of incomplete nucleotide sequences
 
 ## Requirements
 
-* Software:
+* Software:\n
 `$ apt-get install ncbi-blast+`
 `$ apt-get install samtools`
 `$ apt-get install bowtie2`
@@ -30,14 +30,14 @@ $ echo "export PATH=\$PATH:\$HOME/edirect" >> $HOME/.bash_profile`
 `$ R`
 `$ install.packages("ggplot2")
 
-##Usage
+## Usage
 
 `$ perl validGene.pl -in <fileName> -fq <fileName.fastq>`
 
 * fileName: name of the fasta file containing sequences to be analyzed (e.g fasta file = input.fasta; fileName = input)
 * fileName.fastq: read file (.fastq extension)
 
-# Test
+## Test
 
 * This package comes with 3 incomplete sequences for testing.
 
