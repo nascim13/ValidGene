@@ -11,8 +11,8 @@ Pipeline for the validation of incomplete nucleotide sequences
 `$ apt-get install bowtie2`<br>
 
 * Efetch:<br>
-`$ cd ~/bin/bash<br>
-$ perl -MNet::FTP -e \
+`$ cd ~/bin/bash`<br>
+`$ perl -MNet::FTP -e \
     '$ftp = new Net::FTP("ftp.ncbi.nlm.nih.gov", Passive => 1);
     $ftp->login; $ftp->binary;
     $ftp->get("/entrez/entrezdirect/edirect.tar.gz");`<br>
