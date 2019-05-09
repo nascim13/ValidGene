@@ -21,7 +21,7 @@ Pipeline for the validation of incomplete nucleotide sequences
 `$ builtin exit`<br>
 `$ export PATH=$PATH:$HOME/edirect >& /dev/null || setenv PATH "${PATH}:$HOME/edirect"`<br>
 `$ ./edirect/setup.sh`<br>
-`$ echo "export PATH=\$PATH:\$HOME/edirect" >> $HOME/.bash_profile``<br>
+`$ echo "export PATH=\$PATH:\$HOME/edirect" >> $HOME/.bash_profile`<br>
 
 
 * Statistics R module for perl:<br>
