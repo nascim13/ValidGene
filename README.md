@@ -29,7 +29,7 @@ $ echo "export PATH=\$PATH:\$HOME/edirect" >> $HOME/.bash_profile`<br>
 
 * ggplot2 library for R:<br>
 `$ R`<br>
-`$ install.packages("ggplot2")<br>
+`$ install.packages("ggplot2")`<br>
 
 ## Usage
 
@@ -41,7 +41,6 @@ $ echo "export PATH=\$PATH:\$HOME/edirect" >> $HOME/.bash_profile`<br>
 ## Test
 
 * This package comes with 3 incomplete sequences for testing.<br>
-
 `$ perl ValidGene.pl -in a.partial -fq bmul.fastq`<br>
 `$ perl ValidGene.pl -in bc.partial -fq bmul.fastq`<br>
 `$ perl ValidGene.pl -in d.partial -fq bmul.fastq`<br>
