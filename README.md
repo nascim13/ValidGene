@@ -38,7 +38,7 @@ Pipeline for the validation of incomplete nucleotide sequences.
 * fileName: name of the fasta file containing sequences to be analyzed (e.g fasta file = input.fasta; fileName = input).
 * fileName.fastq: read file (.fastq extension).
 
-## Test
+## Test set
 
 * This package comes with 3 incomplete sequences for testing.<br>
 `$ perl ValidGene.pl -in seq1 -fq bmul.fastq`<br>
