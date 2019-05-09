@@ -10,42 +10,42 @@ Pipeline for the validation of incomplete nucleotide sequences
 `$ apt-get install samtools`<br>
 `$ apt-get install bowtie2`<br>
 
-* Efetch:
-`$ cd ~/bin/bash
-$ perl -MNet::FTP -e \
+* Efetch:<br>
+`$ cd ~/bin/bash<br>
+$ perl -MNet::FTP -e \<br>
     '$ftp = new Net::FTP("ftp.ncbi.nlm.nih.gov", Passive => 1);
     $ftp->login; $ftp->binary;
-    $ftp->get("/entrez/entrezdirect/edirect.tar.gz");'
-$ gunzip -c edirect.tar.gz | tar xf -
-$ rm edirect.tar.gz
-$ builtin exit
-$ export PATH=$PATH:$HOME/edirect >& /dev/null || setenv PATH "${PATH}:$HOME/edirect"
-$ ./edirect/setup.sh
-$ echo "export PATH=\$PATH:\$HOME/edirect" >> $HOME/.bash_profile`
+    $ftp->get("/entrez/entrezdirect/edirect.tar.gz");'<br>
+$ gunzip -c edirect.tar.gz | tar xf -<br>
+$ rm edirect.tar.gz<br>
+$ builtin exit<br>
+$ export PATH=$PATH:$HOME/edirect >& /dev/null || setenv PATH "${PATH}:$HOME/edirect"<br>
+$ ./edirect/setup.sh<br>
+$ echo "export PATH=\$PATH:\$HOME/edirect" >> $HOME/.bash_profile`<br>
 
 
-* Statistics R module for perl:
-`$ cpan install Statistics::R`
+* Statistics R module for perl:<br>
+`$ cpan install Statistics::R`<br>
 
-* ggplot2 library for R:
-`$ R`
-`$ install.packages("ggplot2")
+* ggplot2 library for R:<br>
+`$ R`<br>
+`$ install.packages("ggplot2")<br>
 
 ## Usage
 
-`$ perl validGene.pl -in <fileName> -fq <fileName.fastq>`
+`$ perl validGene.pl -in <fileName> -fq <fileName.fastq>`<br>
 
-* fileName: name of the fasta file containing sequences to be analyzed (e.g fasta file = input.fasta; fileName = input)
-* fileName.fastq: read file (.fastq extension)
+* fileName: name of the fasta file containing sequences to be analyzed (e.g fasta file = input.fasta; fileName = input).
+* fileName.fastq: read file (.fastq extension).
 
 ## Test
 
-* This package comes with 3 incomplete sequences for testing.
+* This package comes with 3 incomplete sequences for testing.<br>
 
-`$ perl ValidGene.pl -in a.partial -fq bmul.fastq`
-`$ perl ValidGene.pl -in bc.partial -fq bmul.fastq`
-`$ perl ValidGene.pl -in d.partial -fq bmul.fastq`
+`$ perl ValidGene.pl -in a.partial -fq bmul.fastq`<br>
+`$ perl ValidGene.pl -in bc.partial -fq bmul.fastq`<br>
+`$ perl ValidGene.pl -in d.partial -fq bmul.fastq`<br>
 
-### Output files:
-* fileName.csv: Summarizes the results of the validation analysis.
-* fileName.pdf: A read coverage plot for the region containing the homolog sequence in the reference genome.
+### Output files:<br>
+* fileName.csv: Summarizes the results of the validation analysis.<br>
+* fileName.pdf: A read coverage plot for the region containing the homolog sequence in the reference genome.<br>
