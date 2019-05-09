@@ -15,7 +15,7 @@ Pipeline for the validation of incomplete nucleotide sequences
 $ perl -MNet::FTP -e \
     '$ftp = new Net::FTP("ftp.ncbi.nlm.nih.gov", Passive => 1);
     $ftp->login; $ftp->binary;
-    $ftp->get("/entrez/entrezdirect/edirect.tar.gz");'<br>
+    $ftp->get("/entrez/entrezdirect/edirect.tar.gz");`<br>
 `$ gunzip -c edirect.tar.gz | tar xf -`<br>
 `$ rm edirect.tar.gz`<br>
 `$ builtin exit`<br>
