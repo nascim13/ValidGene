@@ -1,9 +1,9 @@
 <img src="DSG_doodle.png" width="400">
 
-# ValidGene
+#ValidGene
 Pipeline for the validation of incomplete nucleotide sequences
 
-# Requirements
+##Requirements
 
 * Software:
 `$ apt-get install ncbi-blast+`
@@ -30,7 +30,7 @@ $ echo "export PATH=\$PATH:\$HOME/edirect" >> $HOME/.bash_profile`
 `$ R`
 `$ install.packages("ggplot2")
 
-# Usage
+##Usage
 
 `$ perl validGene.pl -in <fileName> -fq <fileName.fastq>`
 
@@ -45,6 +45,6 @@ $ echo "export PATH=\$PATH:\$HOME/edirect" >> $HOME/.bash_profile`
 `$ perl ValidGene.pl -in bc.partial -fq bmul.fastq`
 `$ perl ValidGene.pl -in d.partial -fq bmul.fastq`
 
-##Output files:
+###Output files:
 * fileName.csv: Summarizes the results of the validation analysis.
 * fileName.pdf: A read coverage plot for the region containing the homolog sequence in the reference genome.
