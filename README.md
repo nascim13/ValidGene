@@ -41,9 +41,9 @@ Pipeline for the validation of incomplete nucleotide sequences.
 ## Test set
 
 * This package comes with 3 incomplete sequences for testing.<br>
-`$ perl ValidGene.pl -in seq1 -fq bmul.fastq`<br>
-`$ perl ValidGene.pl -in seq2 -fq bmul.fastq`<br>
-`$ perl ValidGene.pl -in seq3 -fq bmul.fastq`<br>
+`$ perl ValidGene.pl -in seq1 -fq seq.fastq`<br>
+`$ perl ValidGene.pl -in seq2 -fq seq.fastq`<br>
+`$ perl ValidGene.pl -in seq3 -fq seq.fastq`<br>
 
 ### Output files:<br>
 * fileName.csv: Summarizes the results of the validation analysis.<br>
